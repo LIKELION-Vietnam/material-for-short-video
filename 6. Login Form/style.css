@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --bg: #efe9e6;
+  --light: #ffffff73;
+  --med: #ccc0ba;
+  --dark: #595959;
+  --dark-heavy: rgba(99, 73, 66, 0.29);
+  --main-color: #ff7710;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: var(--bg);
+}
+
+.container {
+  width: 350px;
+  background: var(--bg);
+  padding: 40px 30px;
+  border-radius: 0 50px;
+  box-shadow: -4px -4px 8px var(--light), 3px 3px 6px var(--dark-heavy);
+}
+
+.container .text {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 2.18rem;
+  color: var(--dark);
+}
+
+.container .field {
+  display: flex;
+  height: 3.12rem;
+  width: 100%;
+  position: relative;
+}
+
+.field input {
+  height: 100%;
+  width: 100%;
+  padding-left: 2.81rem;
+  font-size: 16px;
+  outline: none;
+  background: var(--bg);
+  color: var(--main-color);
+  border: none;
+  border-radius: 1.52rem;
+  box-shadow: inset 1.5px 1.5px 4.5px var(--med), inset -4.5px -4.5px 9.5px var(--light);
+}
+
+.field input:focus {
+  box-shadow: inset 1px 1px 2px var(--med), inset -1px -1px 2px var(--light);
+}
+
+.field:nth-child(2) {
+  margin-top: 1.25rem;
+}
+
+.field span {
+  position: absolute;
+  width: 3.12rem;
+  line-height: 3.12rem;
+  color:var(--dark);
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 2.812em;
+  pointer-events: none;
+  color: var(--main-color);
+  transform: translateY(-50%);
+}
+
+.field input:valid ~ label {
+  opacity: 0;
+}
+
+.forgot {
+  text-align: center;
+  margin: 0.5rem 0;
+  color: var(--dark);
+  font-size: 16px;
+}
+
+.forgot a {
+  font-size: 16px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin: 0.9rem 0;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  background: var(--bg);
+  border: none;
+  color: var(--dark);
+  outline: none;
+  cursor: pointer;
+  border-radius: 1.52rem;
+  box-shadow: 1.5px 1.5px 4.5px var(--med), -4.5px -4.5px 9.5px var(--light);
+}
+
+button:focus {
+  color: var(--main-color);
+  box-shadow: inset 1.5px 1.5px 4.5px var(--med), inset -4.5px -4.5px 9.5px var(--light);
+}
+
+.signup {
+  font-size: 16px;
+  color: var(--dark);
+  margin: 0.5rem 0;
+}
+
+.signup a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
