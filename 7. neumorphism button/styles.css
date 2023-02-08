@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --light: white;
+  --med: #efe9e6;
+  --dark: #c4afa4;
+  --dark-heavy: #7a6154;
+}
+body {
+  background: var(--med);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+button {
+  color: var(--dark-heavy);
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  background: var(--med);
+  box-shadow: -2px -2px 5px var(--light), 2px 2px 5px var(--dark);
+}
+
+button:active {
+  box-shadow: -2px -2px 5px var(--light), 2px 2px 5px var(--dark), inset -2px -2px 5px var(--light),
+    inset 2px 2px 5px var(--dark);
+}
